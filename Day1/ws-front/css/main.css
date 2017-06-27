@@ -1,0 +1,28 @@
+.description{
+    text-align: center;
+    color: #330099;
+}
+
+#main-title {
+    color: red;
+}
+
+.container {
+
+}
+.tag {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    color: black;
+    background-color: black;
+    height: 200px;
+    width: 200px;
+}
+
+.imag:hover img {
+    opacity: 1;
+}
+.imag:hover img:hover {
+    opacity: 0;
+}

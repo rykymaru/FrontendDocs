@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo HR</title>
+    <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <script type="text/javascript" src="scripts/app.js"></script>
+</head>
+<body>
+<h1>HR Employees List Page</h1>
+<div class="panel panel-default">
+    <div class="panel-heading description">
+        Employees list
+    </div>
+    <div class="panel-body">
+        <div>
+            <p>
+                <button onclick="showList()">Show List</button>
+            </p>
+        </div>
+        <div id="listcontainer">
+
+        </div>
+        <div id="frequency" ></div>
+    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading description">
+        Add Employee
+    </div>
+
+
+
+
+    <div class="panel-body">
+        <p>
+            First Name: <input type="text" id="firstName"/>
+        </p>
+        <p>
+            Last Name: <input type="text" id="lastName"/>
+        </p>
+        <p>
+            Phone: <input type="text" id="phone"/>
+        </p>
+        <p>
+            Salary: <input type="number" id="salary"/>
+        </p>
+        <p>
+            <button onclick="addEmployee()">Add employee</button>
+        </p>
+    </div>
+
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading description">
+        More Options
+    </div>
+
+    <div class="panel-body">
+            <p>
+                <button onclick="totalSum()">Calculate total</button>
+            </p>
+
+        <div id="my_sum">
+
+        </div>
+        <p>
+            <button onclick="deleteLast()">Delete last employee</button>
+            <button onclick="mySort()">Sort By</button>
+            <input type="text" id="sortType"/>
+            <button onclick="filterInput()">Filter Table Word</button>
+            <input type="text" id="word"/>
+        </p>
+
+    </div>
+
+</div>
+
+
+<div>
+    <button><a href="index.html"/>Back to Home Page</button>
+</div>
+
+</body>
+</html>
